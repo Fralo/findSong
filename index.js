@@ -1,6 +1,7 @@
 const puppeteer = require('puppeteer');
 const express = require('express')
 const app = express()
+const port = process.env.PORT || 3000
 const sleep = (milliseconds) => {
     return new Promise(resolve => setTimeout(resolve, milliseconds))
 }
@@ -57,7 +58,11 @@ app.get('/findSong', async function (req, res) {
     res.send(titolo)
 })
 
-app.listen(4600, function () {
+app.get('/', function (req, res) {
+    res.send(JSON.stringify({ Hello: 'World'}))
+})
+
+app.listen(port, function () {
     console.log('Server is up and running on port 4600...')
 })
 
