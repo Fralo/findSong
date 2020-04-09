@@ -19,9 +19,8 @@ async function trovaCanzone(testo) {
 
     await page.$eval("[name=btnK]", el => el.click())
 
-    //await page.waitForNavigation() => non funziona
+    await page.waitForNavigation()
 
-    await sleep(1000)
     let songAuthor = await page.evaluate(
       () =>
         document.querySelector(".wwUB2c > span:nth-child(1) > a:nth-child(1)")
