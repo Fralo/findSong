@@ -14,7 +14,7 @@ git clone [link repo]
 
 ## Usage example
 
-Once you ahave started the server, go to 
+Once you have started the server, go to 
 ```sh
 loclahost:5000/findSong?text=[the phrase of the song]
 ```
