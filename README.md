@@ -16,7 +16,7 @@ git clone [link repo]
 
 Once you have started the server, go to 
 ```sh
-loclahost:5000/findSong?text=[the phrase of the song]
+localhost:5000/findSong?text=[the phrase of the song]
 ```
 Wait for the result and enjoy 
 
